@@ -1,0 +1,114 @@
+/// Style ogolne stopki
+footer {
+	background: @dark-bg;
+	color: @footer-text-color;
+}
+
+.footer-main {
+	.container {
+		padding-top: 80px;
+		margin-bottom: 40px;
+        div[class*="col-"] {
+            margin-bottom: 10px;
+        }
+		h4 {
+			.header-mixin(14px;700);
+			margin-bottom: 25px;
+			.upper;
+		}
+		ul {
+			.list-style-none;
+		}
+		a {
+            color: grey;
+			&:hover {
+				text-decoration: none;
+				color: @bright-text-color;
+			}
+		}
+	}
+}
+
+// o nas
+
+.footer-social {
+    li {
+        .inline-block;
+        margin-right: 6px;
+        margin-bottom: 3px;
+        a {
+            .basic-transition;
+            .center-text;
+            .inline-block;
+            .square(30px);
+            text-decoration: none;
+            i {
+                .icon(@footer-text-color;16px;28px);
+            }
+        }
+    }
+}
+
+// nasz blog, linki 
+
+.our-blog, .our-links {
+    li {
+        border-top: 1px solid @footer-border-color;
+        &:first-child {
+            border-top:none;
+        }
+        a {
+            .inline-block;
+            .padding-top-bottom(10px;10px);
+            line-height: 1.5;
+        }
+    }
+}
+
+.our-blog {
+    .footer-col-container {
+        margin-right: 20px;
+    }
+}
+
+
+//galeria 
+
+.our-gallery {
+    .footer-col-container {
+        margin-left: 0;
+        @media @small {
+            margin-left: 40px;
+        }
+    }
+    li {
+        .inline-block;
+        margin-bottom: 6px;
+        margin-right: 2px;
+        img {
+            width: 65px;
+        }
+        a {
+            .basic-transition;
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+// copyright 
+
+.copyright {
+    background: @copyright-bg;
+    .upper;
+    .center-text;
+    font-size: 11px;
+    @media @small {
+        text-align: left;
+    }
+}
+
+.copyright-content {
+    .padding-top-bottom(30px;10px);
+}

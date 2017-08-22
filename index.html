@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<title>Bootstrap Zaawansowany - proj.</title>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Glowny plik LESS -->
+	<link rel="stylesheet" href="source/style.css" type="text/css">
+    
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    
+    <!--google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600i,700|Source+Sans+Pro:700" rel="stylesheet">
+    
+    <!-- jquery-->
+     <script src="js/jquery-3.1.1.min.js"></script>
+    
+	<!-- JS Bootrap -->
+	<script src="js/bootstrap.min.js"></script>
+    
+    <!--własne JS-->
+    <script src="js/custom.js"></script>
+    
+     <!--odliczanie JS-->
+    <script src="js/jquery.countTo.js"></script>
+    
+    <!-- warunkowe ładowanie Scroll-->
+    <script src="js/skrollr.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="style/jquery.countdown.css"> 
+    <script type="text/javascript" src="js/jquery.plugin.js"></script> 
+    <script type="text/javascript" src="js/jquery.countdown.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown-pl.js"></script>
+</head>
+
+<body>
+   
+	<!-- Mobilne menu-->
+	<div class="mobile-menu " id="main-nav-mobile">
+		<a href="" class="mobile-menu-close pull-right" id="mobile-close"><i class="fa fa-times"></i></a>
+		<ul class="main-nav-list-mobile">
+			<li><a href="">Ślub</a></li>
+			<li><a href="">O młodych</a></li>
+			<li><a href="">Kiedy i gdzie</a></li>
+			<li><a href="">Galeria</a></li>
+			<li><a href="">Współpraca</a></li>
+			<li><a href="">Kontakt</a></li>
+		</ul>
+	</div>
+    <!-- glowny kontener-->
+    <div id="main-container">
+        <!--nagłowek-->
+        <header class="main-header alt-bg">
+            <div class="header-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!--logo-->
+                            <div class="logo-wrapper pull-left">
+                                <a href="" class="main-logo">
+                                    <img src="images/logo_main.png" alt="">
+                                </a>
+                            </div>
+                            <!--ikony po prawej-->
+                            <div class="nav-right pull-right">
+                                <ul>
+                                    <li><a href=""><i class="fa fa-search"></i></a></li>
+                                    <li><a href=""><i class="fa fa-shopping-cart"></i></a></li>  
+                                </ul> 
+                            </div>
+                            <!--glowne menu-->
+                            <nav class="nav-main pull-right" id="main-nav">
+                                <a href="" class="mobile-nav-button hidden-md hidden-lg" href="" id="mobile-icon"><i class="fa fa-bars"></i></a>
+                                <ul class="main-nav-list visible-md visible-lg">
+                                    <li><a href="">Ślub</a></li>
+			                        <li><a href="">O młodych</a></li>
+                                    <li><a href="">Kiedy i gdzie</a></li>
+                                    <li><a href="">Galeria</a></li>
+                                    <li><a href="">Współpraca</a></li>
+                                    <li><a href="">Kontakt</a></li>
+                                </ul>
+                            </nav>
+                            <!--clear-fix header-->
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </header>
+        <!--odsuwa zawartość od nagłówka-->
+        <div class="top-separator"></div>
+        <div class="clearfix"></div>
+        
+        <!--Górny slider-->
+        <section class="top-slider hidden-xs">
+            <div id="top-slider" class="carousel slide" data-ride="carousel" data-0="transform:translateY(0px);"
+            data-800="transform:translateY(-400px);">
+            <!--kontrolki-->
+            <ol class="carousel-indicators">
+                <li data-target="#top-slider" data-slide-to="0" class="active"></li>
+                <li data-target="#top-slider" data-slide-to="1"></li>
+                <li data-target="#top-slider" data-slide-to="2"></li>
+            </ol>
+            <!--zawartość slidera-->
+             <div class="carousel-inner" role="listbox">
+                 <!--slide1-->
+                <div class="item active">
+                    <div class="slide-image" id="slide1"></div>
+                    <div class="container">
+                        <div class="item-content" data-0="transform:translateY(0px);" data-800="transform:translateY(50px);">
+                            <h1>Marta i Rafał</h1>
+                            <h3>biorą ślub</h3>
+                            <a class="btn btn-danger" href=""><i class="fa fa-play-circle-o"></i><span>dowiedz się więcej...</span></a>
+                        </div>
+                    </div>
+                </div>
+                 <!--slide2-->
+                <div class="item">
+                    <div class="slide-image" id="slide2"></div>
+                    <div class="container">
+                        <div class="item-content" data-0="transform:translateY(0px);" data-800="transform:translateY(50px);">
+                            <h1>Marta i Rafał</h1>
+                            <h3>are going to marry</h3>
+                            <a class="btn btn-danger" href=""><i class="fa fa-play-circle-o"></i><span>find out more</span></a>
+                        </div>
+                    </div>
+                </div>
+                 <!--slide3-->
+                <div class="item">
+                    <div class="slide-image" id="slide3"></div>
+                    <div class="container">
+                        <div class="item-content" data-0="transform:translateY(0px);" data-800="transform:translateY(50px);">
+                            <h1>Marta i Rafał</h1>
+                            <h3>are going to marry</h3>
+                            <a class="btn btn-danger" href=""><i class="fa fa-play-circle-o"></i><span>find out more</span></a>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+            <!--strzałki-->
+                <a class="left carousel-control" href="#top-slider" role="button" data-slide="prev">
+                    <i class="fa fa-chevron-left"></i>
+                    <span class="sr-only">Poprzedni</span>
+                </a>
+                <a class="right carousel-control" href="#top-slider" role="button" data-slide="next">
+                    <i class="fa fa-chevron-right"></i>
+                    <span class="sr-only">Następny</span>
+                </a>
+            </div>
+        </section>
+        <!--Mobilny wariant-->
+        <section class="mobile-slider visible-xs">
+            <div class="container">
+                 <div class="item-content">
+                            <h1>Marta i Rafał</h1>
+                            <h3>are going to marry</h3>
+                            <a class="btn btn-danger" href="">
+                                <i class="fa fa-play-circle-o"></i>
+                                    <span>find out more</span>
+                            </a>
+                </div>
+            </div>
+        </section>
+        
+        <!--główna zawartość-->
+        <div id="main-content">
+            <!--sekcja intro-->
+            <section class="intro alt-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+                            <header class="section-title">
+                                <h2>Marta i Rafał sa razem od...</h2>
+                                <div class="section-line">
+                                    <span class="section-line-span"><i class="fa fa-circle-o"></i></span>
+                                </div>
+                            </header>
+                            <div class="intro-text">
+                                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--pasek foto-->
+            <section class="photo-bar alt-bg">
+                <div class="container-fluid no-padding">
+                    <div class="row">
+                       <div class="col-xs-12 col-sm-6 col-md-3 photo-bar-single">
+                            <div class="photo-bar-single-inner">
+                                <div class="photo-bar-image">
+                                    <a href="" ><img alt="" class="img-responsive" src="images/pasek_foto/1.jpg"></a>
+                                </div>
+                                <div class="photo-bar-info">
+                                    <h4>Wedding dress</h4>
+                                    <h5>beautifull</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 photo-bar-single">
+                            <div class="photo-bar-single-inner">
+                                <div class="photo-bar-image">
+                                    <a href="" ><img alt="" class="img-responsive" src="images/pasek_foto/2.jpeg"></a>
+                                </div>
+                                <div class="photo-bar-info">
+                                    <h4>Wedding dress</h4>
+                                    <h5>beautifull</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-3 photo-bar-single hidden-xs">
+                            <div class="photo-bar-single-inner">
+                                <div class="photo-bar-image">
+                                    <a href="" ><img alt="" class="img-responsive" src="images/pasek_foto/3.jpeg"></a>
+                                </div>
+                                <div class="photo-bar-info">
+                                    <h4>Wedding dress</h4>
+                                    <h5>beautifull</h5>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        <div class="col-xs-12 col-sm-6 col-md-3 photo-bar-single hidden-xs">
+                            <div class="photo-bar-single-inner">
+                                <div class="photo-bar-image">
+                                    <a href="" ><img alt="" class="img-responsive" src="images/pasek_foto/4.jpeg"></a>
+                                </div>
+                                <div class="photo-bar-info">
+                                    <h4>Wedding dress</h4>
+                                    <h5>beautifull</h5>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </section>
+            <!--sekcja nasze usługi-->
+            <section class="our-services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="our-services-box">
+                                <span><i class="fa fa-bell"></i></span>
+                                <h4>I want to marry you</h4>
+                                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="our-services-box">
+                                <span><i class="fa fa-camera"></i></span>
+                                <h4>I want to marry you</h4>
+                                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="our-services-box">
+                                <span><i class="fa fa-music"></i></span>
+                                <h4>I want to marry you</h4>
+                                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <div class="our-services-box">
+                                <span><i class="fa fa-desktop"></i></span>
+                                <h4>I want to marry you</h4>
+                                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--sekcja video-->
+            <section class="video">
+                <div class="container">
+                    <div class="row">
+                        <!--lewa kolumna-->
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="video-description">
+                                <h2>Nasz nowy film</h2>
+                                <h3>Strony ślubne</h3>
+                                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
+                                <a class="btn btn-danger" href=""><i class="fa fa-file-video-o"></i><span>Zobacz więcej</span></a> 
+                            </div> 
+                        </div>
+                        <!--prawa kolumna-->
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="embed-responsive embed-responsive-16by9 video-content">
+                            <iframe width="640" height="360" src="https://www.youtube.com/embed/9P9RPxws5IU" frameborder="0" allowfullscreen></iframe>
+                            </div>s
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--sekcja zalety-->
+            <section class="our-advantages">
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <header class="section-title">
+                                <h2>Marta i Rafał są razem od...</h2>
+                                <div class="section-line">
+                                    <span class="section-line-span"><i class="fa fa-circle-o"></i></span>
+                                </div>
+                            </header>
+                            <div class="intro-text">
+                                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis.</p>
+                            </div>
+                            <div class="row">
+                                <!--lewa kolumna-->
+                                    <div class="col-xs-12 col-sm-offset-2 col-sm-8 col-md-5 col-md-offset-0">
+                                        <div class="image-border">
+                                            <img class="img-responsive" src="images/on%20tree.jpeg" alt="">
+                                        </div>
+                                    </div>
+                                <!--prawa kolumna-->
+                                    <div class="col-xs-12 col-md-7">
+                                        <div class="our-advantages-text">
+                                            <h3>Dlaczego my?</h3>
+                                            <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor. Pellentesque facilisis.</p>
+                                            <ul class="our-advantages-list">
+                                                <li>information 1</li>
+                                                 <li>information 1</li>
+                                                 <li>information 1</li>
+                                                 <li>information 1</li>
+                                                 <li>information 1</li>
+                                                 <li>information 1</li>
+                                            </ul>
+                                            <div class="our-advantages-bottom-row">
+                                                <a class="btn btn-primary" href="">
+                                                    <i class="fa fa-play-circle-o"></i>
+                                                    <span>find out more</span>
+                                                </a>
+                                                <div class="clearfix visible-xs"></div>
+                                                <i class="fa fa-paypal"></i>
+                                                <i class="fa fa-credit-card"></i>
+                                                <i class="fa fa-eur"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                     </div>    
+                </div>
+            </section>
+            <!--pelna oferta-->
+            <section class="offer alt-bg">
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <header class="section-title">
+                                <h2>Nasza oferta</h2>
+                                <div class="section-line">
+                                    <span class="section-line-span"><i class="fa fa-circle-o"></i></span>
+                                </div>
+                            </header>
+                        </div>
+                     </div>
+                        <!--pierwszy wiersz-->
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-3 offer-single">
+                                <span><i class="fa fa-bookmark-o"></i></span>
+                                <div class="offer-text">
+                                    <h3>System CMS</h3>
+                                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis</p>
+                                </div> 
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 offer-single">
+                                <span><i class="fa fa-bar-chart"></i></span>
+                                <div class="offer-text">
+                                    <h3>System CMS</h3>
+                                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 offer-single">
+                                <span><i class="fa fa-circle-o"></i></span>
+                                <div class="offer-text">
+                                    <h3>System CMS</h3>
+                                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis</p>
+                                </div>  
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 offer-single">
+                                <span><i class="fa fa-microphone"></i></span>
+                                <div class="offer-text">
+                                    <h3>System CMS</h3>
+                                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--drugi wiersz-->
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-3 offer-single">
+                                <span><i class="fa fa-file-code-o"></i></span>
+                                <div class="offer-text">
+                                    <h3>System CMS</h3>
+                                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis</p>
+                                </div> 
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 offer-single">
+                                <span><i class="fa fa-retweet"></i></span>
+                                <div class="offer-text">
+                                    <h3>System CMS</h3>
+                                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis</p>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 offer-single">
+                                <span><i class="fa fa-user"></i></span>
+                                <div class="offer-text">
+                                    <h3>System CMS</h3>
+                                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis</p>
+                                </div>  
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-3 offer-single">
+                                <span><i class="fa fa-volume-up"></i></span>
+                                <div class="offer-text">
+                                    <h3>System CMS</h3>
+                                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis</p>
+                                </div>
+                            </div>
+                        </div>
+                     </div>
+            </section>
+            <!--Najnowsze projekty-->
+            <section class="latest-project">
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <header class="section-title">
+                                <h2>Nasze najnowsze projekty</h2>
+                                <div class="section-line">
+                                    <span class="section-line-span"><i class="fa fa-circle-o"></i></span>
+                                </div>
+                            </header>
+                        </div>
+                        <!--projekt-->
+                        <div class="col-xs-12 col-sm-6 col-md-4 latest-project-single hidden-xs hidden-sm">
+                            <div class="latest-project-inner alt-bg">
+                                <div class="latest-project-head">
+                                    <a href="">
+                                        <img src="images/project_1.jpg">
+                                    </a>
+                                </div>
+                                <h3><a href="">Super projekt</a></h3>
+                                <div class="latest-project-content">
+                                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis...</p>
+                                </div> 
+                                <div class="hor-line"></div>
+                                <a href="" class="pull-right read-more"><i class="fa fa-play"></i></a>
+                                <a href="" class="comments-link">2 komentarze</a>
+                                <div class="clearfix"></div>
+                            </div> 
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 latest-project-single">
+                            <div class="latest-project-inner alt-bg">
+                                <div class="latest-project-head">
+                                    <a href="">
+                                        <img src="images/project_3.jpg">
+                                    </a>
+                                </div>
+                                 <h3><a href="">Super projekt</a></h3>
+                                <div class="latest-project-content">
+                                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis...</p>
+                                </div>
+                                <div class="hor-line"></div>
+                                <a href="" class="pull-right read-more"><i class="fa fa-play"></i></a>
+                                <a href="" class="comments-link">2 komentarze</a>
+                                <div class="clearfix"></div>
+                            </div> 
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 latest-project-single hiden-xs hidden-sm">
+                            <div class="latest-project-inner alt-bg">
+                                <div class="latest-project-head">
+                                    <a href="">
+                                        <img src="images/project_2.jpg">
+                                    </a>
+                                </div>
+                                 <h3><a href="">Super projekt</a></h3>
+                                <div class="latest-project-content">
+                                    <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis...</p>
+                                </div>
+                                <div class="hor-line"></div>
+                                <a href="" class="pull-right read-more"><i class="fa fa-play"></i></a>
+                                <a href="" class="comments-link">2 komentarze</a>
+                                <div class="clearfix"></div>
+                            </div> 
+                        </div>
+                     </div>
+                </div>
+            </section>
+            <!--sekcj promo-->
+            <section class="promo" alt-bg>
+                <div class="container-fluid no-padding">
+                    <div class="row">
+                        <!--promo opis-->
+                        <div class= "col-xs-12 col-sm-6 alt-bg">
+                            <div class="promo-description">
+                                <div>
+                                    <div class="promo-description-head">
+                                        <img class="img-responsive img-circle center-block" src="images/promo_desc.jpg" alt=""/>
+                                        <span>
+                                            <strong>Wspaniała oferta</strong>
+                                            To nasz najnowszy produkt
+                                        </span>
+                                    </div>
+                                    <div class="promo-description-content">
+                                        <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula. Ut molestie a, ultricies porta urna. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--promo slider-->
+                        <div class="col-xs-12 col-sm-6 promo-picture">
+                            <div id="promo-slider" class="carousel slide" data-ride="carousel">
+                            <!--zawartość slidera-->
+                             <div class="carousel-inner" role="listbox">
+                                 <!--slide1-->
+                                <div class="item active">
+                                    <img src="images/1.jpg" class="img-responsive" alt=""/>
+                                </div>
+                                <div class="item">
+                                    <img src="images/2.jpg" class="img-responsive" alt=""/>
+                                </div>
+                            </div>
+                            <!--strzałki-->
+                                <a class="left carousel-control" href="#promo-slider" role="button" data-slide="prev">
+                                    <i class="fa fa-chevron-left"></i>
+                                    <span class="sr-only">Poprzedni</span>
+                                </a>
+                                <a class="right carousel-control" href="#promo-slider" role="button" data-slide="next">
+                                    <i class="fa fa-chevron-right"></i>
+                                    <span class="sr-only">Następny</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="clearfix visible-xs"></div>
+                        <!--pasek logo-->
+                        <div class="col-xs-12">
+                            <div class="promo-logos">
+                                <ul class="logos-list">
+                                    <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href=""><i class="fa fa-dropbox"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--sekcja statystyki-->
+            <section class="statistics">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="statistics-content">
+                                <div class="statistics-block">
+                                    <span class="statistics-icon"><i class="fa fa-dropbox"></i></span>
+                                    <span class="statistics-value timer"data-from="0" data-to="123" data-speed="3000"></span>
+                                    <span class="statistics-text">Filmów</span>
+                                </div>
+                                <div class="statistics-block">
+                                    <span class="statistics-icon"><i class="fa fa-dropbox"></i></span>
+                                    <span class="statistics-value timer"data-from="0" data-to="123" data-speed="3000"></span>
+                                    <span class="statistics-text">Filmów</span>
+                                </div>
+                                <div class="statistics-block">
+                                    <span class="statistics-icon"><i class="fa fa-dropbox"></i></span>
+                                    <span class="statistics-value timer"data-from="0" data-to="123" data-speed="3000"></span>
+                                    <span class="statistics-text">Filmów</span>
+                                </div>
+                                <div class="statistics-block">
+                                    <span class="statistics-icon"><i class="fa fa-dropbox"></i></span>
+                                    <span class="statistics-value timer"data-from="0" data-to="123" data-speed="3000"></span>
+                                    <span class="statistics-text">Filmów</span>
+                                </div>
+                                <div class="statistics-block">
+                                    <span class="statistics-icon"><i class="fa fa-dropbox"></i></span>
+                                    <span class="statistics-value timer"data-from="24" data-to="0" data-speed="100000"></span>
+                                    <span class="statistics-text">Filmów</span>
+                                </div>
+                                <div class="justify-hack"></div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--sekcja kontakt -->
+            <section class="contact">
+                <div class="container-fluid no-padding">
+                    <div class="row">
+                        <!--Mapy-->
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="maps-wrapper embed-responsive embed-responsive-4by3">
+                                <iframe class="embed-responsive-item" width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=P%C4%99powo%20Polna%208&key=AIzaSyB36TxnC249MumMIgUM-iD7MCkMoIJ9-u8" allowfullscreen></iframe>
+                            </div>                                                                       
+                        </div>
+                        <!--Formularz-->
+                        <div class="col-xs-12 col-sm-6">
+                            <div class="form-wrapper">
+                                <div class="contact-form">
+                                    <form action="">
+                                        <div class="form-field">
+                                            <input id="name" placeholder="imię"/>
+                                        </div>
+                                        <div class="form-field">
+                                            <input id="email" placeholder="Email"/>
+                                        </div>
+                                        <div class="form-field">
+                                            <input id="subject" placeholder="Temat"/>
+                                        </div>
+                                        <div class="form-field">
+                                            <textarea id="msg" placeholder="wiadomość" rows="10" cols="30"></textarea>
+                                        </div>
+                                        <button class="btn btn-primary">Wyślij</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--pasek na dole-->
+            <section class="bottom-row">
+                <div class='container'>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-8">
+                            <h3>Zapraszamy do skorzystania z naszej oferty</h3>
+                        </div>
+                        <div class="col-xs-12 col-sm-3">
+                            <a class="btn btn-default" href="">Zapraszamy teraz</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--stopka-->
+            <footer>
+                <!--góra stopki-->
+                <div class="footer-main">
+                    <div class="container">
+                        <div class="row">
+                        <!--0 nas-->
+                            <div class="col-xs-12 col-sm-3 about-us">
+                                <h4>O nas</h4>
+                                <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper. Suspendisse a pellentesque dui, non felis. Maecenas malesuada elit lectus felis, malesuada ultricies. Curabitur et ligula.</p>
+                                <ul class="footer-social">
+                                   <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                                    <li><a href=""><i class="fa fa-dropbox"></i></a></li>
+                                    <li><a href=""><i class="fa fa-google"></i></a></li>
+                                    <li><a href=""><i class="fa fa-dropbox"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- Nasz Blog-->
+                            <div class="col-xs-12 col-sm-3 our-blog">
+                                <div class="footer-col-container">
+                                    <h4>Nasz Blog</h4>
+                                    <ul>
+                                         <li><a href="">Lorem ipsum dolor sit amet enim.</a></li>
+                                         <li><a href="">Lorem ipsum dolor sit amet enim.</a></li>
+                                         <li><a href="">Lorem ipsum dolor sit amet enim.</a></li>
+                                         <li><a href="">Lorem ipsum dolor sit amet enim.</a></li>
+                                         <li><a href="">Lorem ipsum dolor sit amet enim.</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--linki-->
+                            <div class="col-xs-12 col-sm-2 our-links">
+                                <h4>Linki</h4>
+                                <ul>
+                                    <li><a href="">Strefa kursów</a></li>
+                                    <li><a href="">Strefa kursów</a></li>
+                                    <li><a href="">Strefa kursów</a></li>
+                                    <li><a href="">Strefa kursów</a></li>
+                                    <li><a href="">Strefa kursów</a></li>  
+                                </ul>
+                            </div>
+                            <!--Galeria-->
+                            <div class="col-xs-12 col-sm-4 our-gallery">
+                                <div class="footer-col-container">
+                                    <h4>Galeria</h4>
+                                    <ul>
+                                        <li><a href=""><img src="images/footer/1.jpg" alt=""></a></li>
+                                        <li><a href=""><img src="images/footer/2.jpg" alt=""></a></li>
+                                        <li><a href=""><img src="images/footer/3.jpg" alt=""></a></li>
+                                        <li><a href=""><img src="images/footer/4.jpg" alt=""></a></li>
+                                        <li><a href=""><img src="images/footer/1.jpg" alt=""></a></li>
+                                        <li><a href=""><img src="images/footer/1.jpg" alt=""></a></li>
+                                        <li><a href=""><img src="images/footer/1.jpg" alt=""></a></li>
+                                        <li><a href=""><img src="images/footer/2.jpg" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                <!--dół stopki-->
+                <div class="copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 copyright-content">
+                                <p id="ppp">Made by Patrycja Jankowska</p>
+                                <!--Twój numer referencyjny cleverbridge: 111163203  rarekey0b9c4a4007c44201dce9a6cc1a38407005c26c86-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+<script>
+    localStorage.clear();
+    </script>
+</body>
+
+</html>
